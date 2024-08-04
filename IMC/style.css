@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#resultado{
+    width: 100px;
+    height: 30px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.pResultado{
+    color: rgb(88, 88, 88);
+}
+
+.claseInput{
+    border-radius: 15px;
+    background-color: rgb(204, 203, 203);
+    
+}
+
+.claseInput input{
+    font-size: 20px;
+    width: 15%;
+    margin-right: 10px;
+
+}
+
+.div-p{
+    padding-top: 10px;
+    min-height: 100px;
+}
+
+.container{
+    border-radius: 20px;
+}
+
+.bg-light{
+    border-radius: 20px;
+}
+
+.realizada{
+    text-decoration: line-through;
+}
+
+.label-input{
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    background:  #fff;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+.label-input:hover{
+    box-shadow: 5px 5px 10px 5px rgba(102, 93, 236, 0.603);
+}
+
+#id-input:checked~ .label-input{
+    background: #4184e7;
+}
+.label-input:after{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background:  #0e0d0d;
+    border-radius: 100px;
+    top: 4px;
+    left: 5px;
+    transition: 0.3s;
+}
+#id-input{
+    display: none;   
+}
+
+#id-input:checked~ .label-input:after{
+    left: 20px;
+}
