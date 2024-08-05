@@ -50,10 +50,12 @@ function crearTarjetas(array) {
     });
 }
 
+let idGlobal = 22
+
 // Función para agregar una nueva nota
 function agregarNota(titulo, texto) {
     const nuevaNota = {
-        id: notasCreadas.length + 1,
+        id: idGlobal,
         titulo: titulo,
         texto: texto,
         realizada: false
@@ -62,6 +64,7 @@ function agregarNota(titulo, texto) {
     notasCreadas.push(nuevaNota);
     // Actualizar la visualización de las notas
     crearTarjetas(notasCreadas);
+    idGlobal = idGlobal + 1
 }
 
 // Función manejadora del evento submit del formulario
