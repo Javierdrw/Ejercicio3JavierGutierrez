@@ -25,6 +25,7 @@ let notasCreadas = [
 
 // Referencia al contenedor donde se mostrarán las notas
 const Notas = document.getElementById('notas');
+
 const realizado = document.getElementById('id-input');
 
 // Función para crear las tarjetas de notas
